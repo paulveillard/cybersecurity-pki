@@ -15,6 +15,13 @@ Public-key infrastructure (PKI) is what makes internet encryption and digital si
   - [how does PKI Work](#)
   - [What is PKI used for](#)
 - [Resources](#resources)
+  - [Root Certificate Programs](#)
+  - [Articles & Other sources](#)
+  - [Hardware Secure Modules (HSM) & Key management](#)
+  - [Books](#)
+  - [Research Papers](#)
+  - [ Audio / Video](#)
+  - [Open-Source Certificate Authority Software](#)
 
 # `Introduction`
 
