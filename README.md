@@ -36,7 +36,7 @@ PKI takes advantage of the fact that information encrypted with a private key ca
 
 You may have noticed this doesn’t actually solve the problem of securely exchanging public keys… it just moves it! We still need some way to securely get the certificate authority’s public key. For this reason, there are hierarchies of certificate authorities, with root CAs at the top of the hierarchy.
 
-## What is PKI used for?
+## `What is PKI used for?`
 
 
 ## `Table of Contents`
