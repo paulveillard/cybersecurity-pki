@@ -1,0 +1,22 @@
+{
+    "ca" : {
+        "emailAddress" : "ca@local",
+        "commonName" : "local.ca",
+        "countryName" : "AA",
+        "localityName" : "CITY",
+        "stateOrProvinceName" : "RAN",
+        "organizationName" : "OU",
+        "organizationUnitName" : "OU-Unit-Name",
+        "serialNumber" : 0,
+        "validityStartInSeconds" : 0,
+        "validityEndInSeconds" : 315360000,
+        "certs" : [
+            {
+                "commonName" : "test1.local"
+            },
+            {
+                "commonName" : "test2.local"
+            }
+        ]
+    }
+}

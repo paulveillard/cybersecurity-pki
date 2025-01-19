@@ -1,0 +1,176 @@
+# This definition stops the following lines choking if HOME isn't
+# defined.
+HOME			= .
+RANDFILE		= $ENV::HOME/.rnd
+
+# Extra OBJECT IDENTIFIER info:
+#oid_file		= $ENV::HOME/.oid
+oid_section		= new_oids
+
+[ new_oids ]
+tsa_policy1 = 1.2.3.4.1
+tsa_policy2 = 1.2.3.4.5.6
+tsa_policy3 = 1.2.3.4.5.7
+
+####################
+# DEFAULT CA SECTION
+####################
+[ ca ]
+default_ca	= CA_default		# The default ca section
+
+[ CA_default ]
+dir		    = _change_me_dir_
+certs		= $dir/certs		# Where the issued certs are kept
+new_certs_dir	= $certs		# default place for new certs.
+database	= $dir/index.txt	# database index file.
+serial		= $dir/serial 		# The current serial number
+RANDFILE	= $dir/private/.rand	# private random number file
+
+# Intermediate CA files
+certificate	= _change_me_crt_
+private_key	= _change_me_key_
+
+# Certificate Revocation config
+crl_dir		= $dir/crl		# Where the issued crl are kept
+crl		= $crl_dir/.servers.crl.pem	# The current CRL
+crlnumber	= $crl_dir/crlnumber	# the current crl number must be commented out to leave a V1 CRL
+default_crl_days= 180			# how long before next CRL
+
+unique_subject	= no
+x509_extensions	= usr_cert		# The extensions to add to the cert
+name_opt 	= ca_default		# Subject Name options
+cert_opt 	= ca_default		# Certificate field options
+default_days	= 3650			# how long to certify for
+default_md	= sha256		# use public key default MD
+preserve	= no			# keep passed DN ordering
+policy		= policy_anything
+
+# For the 'anything' policy
+[ policy_anything ]
+countryName		= optional
+stateOrProvinceName	= optional
+localityName		= optional
+organizationName	= optional
+organizationalUnitName	= optional
+commonName		= supplied
+emailAddress		= optional
+
+#############################
+# CERTIFICATE REQUEST OPTIONS    
+#############################
+[ req ]
+prompt			= yes
+default_bits		= 2048
+distinguished_name	= req_distinguished_name
+attributes		= req_attributes
+x509_extensions		= v3_ca	# The extensions to add to the self signed cert
+string_mask 		= utf8only
+req_extensions 		= v3_req # The extensions to add to a certificate request
+
+[ req_distinguished_name ]
+# Default values for DNM server certificates
+countryName			= GB
+stateOrProvinceName		= STATE
+localityName			= CITY
+0.organizationName		= COMPANY NAME
+organizationalUnitName		= DEPARTMENT
+commonName			= _change_me_fqdn_
+emailAddress			= EMAIL_ADDRESS
+
+[ req_attributes ]
+
+[ usr_cert ]
+basicConstraints = CA:FALSE
+nsCertType = client, email
+nsComment = "OpenSSL Generated Client Certificate"
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer
+keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = clientAuth, emailProtection
+#crlDistributionPoints = URI:
+
+[ usr_cert_has_san ]
+basicConstraints = CA:FALSE
+nsCertType = client, email
+nsComment = "OpenSSL Generated Client Certificate"
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer
+keyUsage = critical, nonRepudiation, digitalSignature, keyEncipherment
+extendedKeyUsage = clientAuth, emailProtection
+#crlDistributionPoints = URI:
+
+[ server_cert ]
+basicConstraints = CA:FALSE
+nsCertType = server
+nsComment = "OpenSSL Generated Server Certificate"
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid,issuer:always
+keyUsage = critical, digitalSignature, keyEncipherment
+extendedKeyUsage = serverAuth
+subjectAltName = DNS:_change_me_fqdn_
+
+[ v3_req ]
+basicConstraints = CA:FALSE
+keyUsage = nonRepudiation, digitalSignature, keyEncipherment
+
+[ v3_ca ]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer
+basicConstraints = critical,CA:true
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
+#crlDistributionPoints = URI:
+
+[ v3_ca_has_san ]
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid:always,issuer
+basicConstraints = critical,CA:true
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
+#crlDistributionPoints = URI:
+
+[ v3_intermediate_ca ]
+subjectKeyIdentifier = hash
+authorityKeyIdentifier = keyid:always,issuer
+basicConstraints = critical, CA:true, pathlen:0
+keyUsage = critical, digitalSignature, cRLSign, keyCertSign
+
+[ crl_ext ]
+authorityKeyIdentifier=keyid:always
+
+[ proxy_cert_ext ]
+basicConstraints=CA:FALSE
+nsComment			= "OpenSSL Generated Certificate"
+subjectKeyIdentifier=hash
+authorityKeyIdentifier=keyid,issuer
+proxyCertInfo=critical,language:id-ppl-anyLanguage,pathlen:3,policy:foo
+
+####################################################################
+[ tsa ]
+
+default_tsa = tsa_config1	# the default TSA section
+
+[ tsa_config1 ]
+
+# These are used by the TSA reply generation only.
+dir		= /etc/ssl		# TSA root directory
+serial		= $dir/tsaserial	# The current serial number (mandatory)
+crypto_device	= builtin		# OpenSSL engine to use for signing
+signer_cert	= $dir/tsacert.pem 	# The TSA signing certificate
+					# (optional)
+certs		= $dir/cacert.pem	# Certificate chain to include in reply
+					# (optional)
+signer_key	= $dir/private/tsakey.pem # The TSA private key (optional)
+signer_digest  = sha256			# Signing digest to use. (Optional)
+default_policy	= tsa_policy1		# Policy if request did not specify it
+					# (optional)
+other_policies	= tsa_policy2, tsa_policy3	# acceptable policies (optional)
+digests     = sha1, sha256, sha384, sha512  # Acceptable message digests (mandatory)
+accuracy	= secs:1, millisecs:500, microsecs:100	# (optional)
+clock_precision_digits  = 0	# number of digits after dot. (optional)
+ordering		= yes	# Is ordering defined for timestamps?
+				# (optional, default: no)
+tsa_name		= yes	# Must the TSA name be included in the reply?
+				# (optional, default: no)
+ess_cert_id_chain	= no	# Must the ESS cert id chain be included?
+				# (optional, default: no)
+ess_cert_id_alg		= sha1	# algorithm to compute certificate
+				# identifier (optional, default: sha1)
