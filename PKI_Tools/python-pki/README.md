@@ -1,4 +1,5 @@
-# python-pki
+# python-pki: Easy to use generator for infrastructure PKIs.
+
 ## How-To-Use
 First and only one time run:
 
