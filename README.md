@@ -27,7 +27,8 @@ If two people exchange public keys with each other, they can talk to each other 
 
 - Public-key cryptography can create secure channels of communication, but it requires an existing secure channel to exchange keys.
  > This is the problem that PKI aims to solve. PKI’s most basic purpose is to securely distribute and manage public keys.
-It does this using trusted third parties who verify the authenticity of public keys and then use their own private keys to digitally sign the public keys. That way, even if the key is not encrypted and has to be sent over cleartext, we will still be able to verify that the key is trusted by the third party.
+
+- It does this using trusted third parties who verify the authenticity of public keys and then use their own private keys to digitally sign the public keys. That way, even if the key is not encrypted and has to be sent over cleartext, we will still be able to verify that the key is trusted by the third party.
 
 
 ## How does PKI Work?
