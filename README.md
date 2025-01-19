@@ -22,7 +22,7 @@ If two people exchange public keys with each other, they can talk to each other 
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/2.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
-![2](https://github.com/paulveillard/cybersecurity-pki/blob/main/img/2.png)
+
 
 
 - Public-key cryptography can create secure channels of communication, but it requires an existing secure channel to exchange keys.
