@@ -10,7 +10,20 @@ Public-key infrastructure (PKI) is what makes internet encryption and digital si
 ![image](https://github.com/user-attachments/assets/88e5468a-cbe4-48f6-9a29-3f0ae5a4c224)
 
 # Introduction
+
 ## What is PKI?
+Before we talk about what exactly PKI is, we need to talk about public-key cryptography. Public-key cryptography is a type of cryptography that uses asymmetric encryption which is a type of encryption that uses multiple keys. Public-key cryptography has a private key, and a public key. Both keys can encrypt data, but the public key can only decrypt data encrypted by the private key. The public key can also not be easily derived from the private key.
+
+![1](https://github.com/paulveillard/cybersecurity-pki/blob/main/img/1.png)
+
+If two people exchange public keys with each other, they can talk to each other securely. They do this by encrypting messages with their own private key as well as the other person’s public key. There is one big question: how do these people exchange public keys securely? If they send them via an insecure channel, someone could intercept the keys, and substitute in their own, different keys. Each person would think they were talking directly with the other, when, in fact, they were both now talking to an attacker.
+
+
+- Public-key cryptography can create secure channels of communication, but it requires an existing secure channel to exchange keys.
+ > This is the problem that PKI aims to solve. PKI’s most basic purpose is to securely distribute and manage public keys.
+It does this using trusted third parties who verify the authenticity of public keys and then use their own private keys to digitally sign the public keys. That way, even if the key is not encrypted and has to be sent over cleartext, we will still be able to verify that the key is trusted by the third party.
+
+
 ## How does PKI Work?
 ## What is PKI used for?
 
