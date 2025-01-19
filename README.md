@@ -18,6 +18,8 @@ Before we talk about what exactly PKI is, we need to talk about public-key crypt
 
 If two people exchange public keys with each other, they can talk to each other securely. They do this by encrypting messages with their own private key as well as the other person’s public key. There is one big question: how do these people exchange public keys securely? If they send them via an insecure channel, someone could intercept the keys, and substitute in their own, different keys. Each person would think they were talking directly with the other, when, in fact, they were both now talking to an attacker.
 
+![2](https://github.com/paulveillard/cybersecurity-pki/blob/main/img/2.png)
+
 
 - Public-key cryptography can create secure channels of communication, but it requires an existing secure channel to exchange keys.
  > This is the problem that PKI aims to solve. PKI’s most basic purpose is to securely distribute and manage public keys.
@@ -25,6 +27,10 @@ It does this using trusted third parties who verify the authenticity of public k
 
 
 ## How does PKI Work?
+PKI takes advantage of the fact that information encrypted with a private key can be decrypted by anyone with the corresponding public key. This is used to create digital certificates vouching for the authenticity of a given public key. The third-parties who verify the authenticity are known as certificate authorities, or CAs for short.
+
+You may have noticed this doesn’t actually solve the problem of securely exchanging public keys… it just moves it! We still need some way to securely get the certificate authority’s public key. For this reason, there are hierarchies of certificate authorities, with root CAs at the top of the hierarchy.
+
 ## What is PKI used for?
 
 
