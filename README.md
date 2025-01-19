@@ -60,12 +60,6 @@ While we usually talk about PKI in the context of web security, it comes in hand
 > PKI is an essential technology for modern security, serving as a foundation for modern web security. While PKI can seem intimidating at first, it isn’t as hard to understand once we see what problems it tries to solve, and know about the cryptographic principles that make it work. Not everyone needs to know the technical details of how PKI works, but it’s something that everyone in cybersecurity should have a basic knowledge of.
 
 
-## `Table of Contents`
-- [Introduction](#Introduction)
-  - [What is PKI](#)
-  - [how does PKI Work](#)
-  - [What is PKI used for](#)
-- [Resources](#resources)
 
 ## Root Certificate Programs  
 
