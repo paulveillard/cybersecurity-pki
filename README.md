@@ -148,3 +148,11 @@ Fundamental X.509 PKI in Theory and OpenSSL (Cyrill Gössi) - [Playlist](https:/
 | [easy-rsa](https://github.com/OpenVPN/easy-rsa) | no | no | easy-rsa - Simple shell based CA utility |
 | [OpenSSL Certificate Authority](https://jamielinux.com/docs/openssl-certificate-authority/) | yes | no | shell based CA leveraging OpenSSL |
 | [XCA](https://www.hohnstaedt.de/xca/) | yes | no | Certificate authority with a comprehensive GUI |
+
+
+## License
+MIT License & [cc](https://creativecommons.org/licenses/by/4.0/) license
+
+<a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
+
+To the extent possible under law, [Paul Veillard](https://github.com/paulveillard/) has waived all copyright and related or neighboring rights to this work.
