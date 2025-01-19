@@ -18,6 +18,10 @@ Before we talk about what exactly PKI is, we need to talk about public-key crypt
 
 If two people exchange public keys with each other, they can talk to each other securely. They do this by encrypting messages with their own private key as well as the other person’s public key. There is one big question: how do these people exchange public keys securely? If they send them via an insecure channel, someone could intercept the keys, and substitute in their own, different keys. Each person would think they were talking directly with the other, when, in fact, they were both now talking to an attacker.
 
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/2.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
 ![2](https://github.com/paulveillard/cybersecurity-pki/blob/main/img/2.png)
 
 
