@@ -68,7 +68,7 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 
 
-## Root Certificate Programs  
+## `Root Certificate Programs`  
 
 The organizations behind the browser and the operating system development maintain the most widely used collections of up-to-date certificate authority certificates.    
 Root programs keep the list up-to-date and work together on the process standardization.  
@@ -80,7 +80,7 @@ Root programs keep the list up-to-date and work together on the process standard
 [The Common CA Database (CCADB)](https://www.ccadb.org/) - managed by Mozilla, supported by Microsoft & Google  
 
 
-## Articles & Other sources
+## `Articles & Other sources`
 
 [Everything you Never Wanted to Know about PKI but were Forced to Find Out (PDF)](https://www.cs.auckland.ac.nz/~pgut001/pubs/pkitutorial.pdf) - by Peter Gutmann  
 [PKI: It’s Not Dead,Just Resting (PDF)](https://people.cs.vt.edu/~kafura/cs6204/Readings/Authentication/PKINotDead.pdf) - Peter Gutmann  
@@ -98,7 +98,7 @@ Root programs keep the list up-to-date and work together on the process standard
 [PKI maturity model](https://pkic.org/pkimm/model/) - by PKI Consortium  
 [PKI Posters](https://www.cem.me/pki) - Posters by Carl Mehner about the entire lifecycle of an SSL certificate
 
-## Hardware Secure Modules (HSM) & Key management  
+## `Hardware Secure Modules (HSM) & Key management`  
 
 [Why I don't like smartcards, HSMs, YubiKeys, etc.](https://news.ycombinator.com/item?id=13031155) - Hacker News  
 [The Untold Story of PKCS#11 HSM Vulnerabilities](https://cryptosense.com/blog/the-untold-story-of-pkcs11-hsm-vulnerabilities/) - Cryptosense  
@@ -157,7 +157,7 @@ Fundamental X.509 PKI in Theory and OpenSSL (Cyrill Gössi) - [Playlist](https:/
 | [XCA](https://www.hohnstaedt.de/xca/) | yes | no | Certificate authority with a comprehensive GUI |
 
 
-## License
+## `License`
 MIT License & [cc](https://creativecommons.org/licenses/by/4.0/) license
 
 <a rel="license" href="http://creativecommons.org/licenses/by/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.
