@@ -152,7 +152,13 @@ You will find a reference section at the bottom of each page, with links to rele
 
 - We recommend at least OpenSSL 3.0.5. Check with:
 > The examples are designed to be simple, consistent, complete, and reproducible. They are not meant to showcase the latest trends in PKI design nor do they explore every last feature of OpenSSL. Rather, they can serve as templates for you to modify and extend when creating your own PKIs.
-  
+
+## Simple PKI
+- In this example we create the simplest possible PKI: One root CA and one signing CA. We use the PKI to issue email-protection and TLS-server certificates.
+
+
+## Advanced PKI
+## Expert
 
 
 # `Resources`
