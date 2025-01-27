@@ -126,11 +126,13 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 ## Certificate Types
 
+# `PKI Examples`
 
-## File Formats
+
+## `File Formats`
 
 
-# Resources
+# `Resources`
 
 ## `Root Certificate Programs`  
 
