@@ -75,6 +75,10 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 ## `PKI Concepts`
 
+**An X.509 PKI is a security architecture that uses well-established cryptographic mechanisms to support use-cases like email protection and web server authentication.** In this regard it is similar to other systems based on public-key cryptography, for example OpenPGP [RFC 4880]. In the realm of X.509 however, and thanks to its roots in a globe-spanning scheme devised by the telecom industry [X.400], these mechanisms come with a fair amount of administrative overhead.
+
+> One thing to keep in mind is that X.509 is not an application, but a specification upon which applications like Secure Multipurpose Internet Mail Extensions (S/MIME) and Transport Layer Security (TLS) are based. The building blocks are very generic and derive most of their meaning from the relations that exist/are established between them. It’s called an infrastructure for a reason.
+
 
 
 ## `Root Certificate Programs`  
