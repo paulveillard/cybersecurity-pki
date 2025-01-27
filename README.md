@@ -111,6 +111,9 @@ While we usually talk about PKI in the context of web security, it comes in hand
 > Document describing structure and processes of a CA.
 
 
+### CA Types
+
+### Certificate Types
 
 
 
