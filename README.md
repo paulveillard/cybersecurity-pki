@@ -80,7 +80,12 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 > One thing to keep in mind is that X.509 is not an application, but a specification upon which applications like Secure Multipurpose Internet Mail Extensions (S/MIME) and Transport Layer Security (TLS) are based. The building blocks are very generic and derive most of their meaning from the relations that exist/are established between them. It’s called an infrastructure for a reason.
 
+
 ## PKI Process
+
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-concept.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
 #### 1 - A requestor generates a CSR and submits it to the CA.
 
