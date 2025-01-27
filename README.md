@@ -154,14 +154,15 @@ You will find a reference section at the bottom of each page, with links to rele
 > The examples are designed to be simple, consistent, complete, and reproducible. They are not meant to showcase the latest trends in PKI design nor do they explore every last feature of OpenSSL. Rather, they can serve as templates for you to modify and extend when creating your own PKIs.
 
 ## Simple PKI
-- In this example we create the simplest possible PKI: One root CA and one signing CA. We use the PKI to issue email-protection and TLS-server certificates.
+- In this example we create the simplest possible PKI: One root CA and one signing CA. We use the PKI to issue email-protection and TLS-server certificates. For further understanding, please see here
 
 
 ## Advanced PKI
-- In this example we create a larger setup, consisting of a root CA and three signing CAs. We use the PKI to issue email-protection, TLS-server, TLS-client, and code-signing certificates. We encounter two new certificate extensions: authorityInfoAccess and crlDistributionPoints.
+- In this example we create a larger setup, consisting of a root CA and three signing CAs. We use the PKI to issue email-protection, TLS-server, TLS-client, and code-signing certificates. We encounter two new certificate extensions: authorityInfoAccess and crlDistributionPoints. For further understanding, please see here
 
   
 ## Expert
+- In this example we create a 3-tier CA hierarchy: One root CA, one intermediate CA, and two signing CAs. We use the PKI to issue identity & encryption certificates to end-users, as well as TLS-server, TLS-client, time-stamping, and OCSP-signing certificates to network components. We introduce the subjectInfoAccess and certificatePolicies extensions. We also show how to work with OCSP responders. For further understanding, please see here
 
 
 # `Resources`
