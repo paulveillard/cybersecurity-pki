@@ -126,10 +126,10 @@ While we usually talk about PKI in the context of web security, it comes in hand
 ## `Certificate Types`
 
 #### CA Certificate
-Certificate of a CA. Used to sign certificates and CRLs.
+> Certificate of a CA. Used to sign certificates and CRLs.
 
 #### Root Certificate
-Self-signed CA certificate at the root of a PKI hierarchy. Serves as the PKI’s trust anchor.
+> Self-signed CA certificate at the root of a PKI hierarchy. Serves as the PKI’s trust anchor.
 
 #### Cross Certificate
 > CA certificate issued by a CA external to the primary PKI hierarchy. Used to connect two PKIs and thus usually comes in pairs. [1]
