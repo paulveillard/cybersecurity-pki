@@ -87,6 +87,31 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 #### 3 - Should the certificate at some point be revoked, the CA adds it to its CRL.
 
+### PKI Components
+
+#### Public Key Infrastructure (PKI)
+> Security architecture where trust is conveyed through the signature of a trusted CA.
+
+Certificate Authority (CA)
+Entity issuing certificates and CRLs.
+
+Registration Authority (RA)
+Entity handling PKI enrolment. May be identical with the CA.
+
+Certificate
+Public key and ID bound by a CA signature.
+
+Certificate Signing Request (CSR)
+Request for certification. Contains public key and ID to be certified.
+
+Certificate Revocation List (CRL)
+List of revoked certificates. Issued by a CA at regular intervals.
+
+Certification Practice Statement (CPS)
+Document describing structure and processes of a CA.
+
+
+
 
 
 ## `Root Certificate Programs`  
