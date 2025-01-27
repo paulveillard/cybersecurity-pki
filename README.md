@@ -151,7 +151,7 @@ The examples are meant to be done in order, each providing the basis for the one
 You will find a reference section at the bottom of each page, with links to relevant parts of the OpenSSL documentation. Please use these links for details on command line options and configuration file settings.
 
 - We recommend at least OpenSSL 3.0.5. Check with:
-
+> The examples are designed to be simple, consistent, complete, and reproducible. They are not meant to showcase the latest trends in PKI design nor do they explore every last feature of OpenSSL. Rather, they can serve as templates for you to modify and extend when creating your own PKIs.
   
 
 
