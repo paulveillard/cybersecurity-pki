@@ -114,7 +114,6 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 ## CA Types
 
-### Certificate Types
 - Root CA
 > CA at the root of a PKI hierarchy. Issues only CA certificates.
 
@@ -125,6 +124,18 @@ While we usually talk about PKI in the context of web security, it comes in hand
 > CA at the bottom of a PKI hierarchy. Issues only user certificates.
 
 ## `Certificate Types`
+
+#### CA Certificate
+Certificate of a CA. Used to sign certificates and CRLs.
+
+#### Root Certificate
+Self-signed CA certificate at the root of a PKI hierarchy. Serves as the PKI’s trust anchor.
+
+#### Cross Certificate
+> CA certificate issued by a CA external to the primary PKI hierarchy. Used to connect two PKIs and thus usually comes in pairs. [1]
+
+#### User Certificate
+> End-entity certificate issued for one or more purposes: email-protection, server-auth, client-auth, code-signing, etc. A user certificate cannot sign other certificates.
 
 ## `File Formats`
 
