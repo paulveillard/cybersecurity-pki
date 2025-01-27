@@ -158,6 +158,9 @@ You will find a reference section at the bottom of each page, with links to rele
 
 
 ## Advanced PKI
+- In this example we create a larger setup, consisting of a root CA and three signing CAs. We use the PKI to issue email-protection, TLS-server, TLS-client, and code-signing certificates. We encounter two new certificate extensions: authorityInfoAccess and crlDistributionPoints.
+
+  
 ## Expert
 
 
