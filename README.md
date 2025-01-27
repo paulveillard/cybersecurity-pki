@@ -114,6 +114,14 @@ While we usually talk about PKI in the context of web security, it comes in hand
 ### CA Types
 
 ### Certificate Types
+- Root CA
+> CA at the root of a PKI hierarchy. Issues only CA certificates.
+
+- Intermediate CA
+> CA below the root CA but not a signing CA. Issues only CA certificates.
+
+- Signing CA
+> CA at the bottom of a PKI hierarchy. Issues only user certificates.
 
 
 
