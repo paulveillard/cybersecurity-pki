@@ -139,10 +139,20 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 ## `File Formats`
 
+- Privacy Enhanced Mail (PEM)
+> Text format. Base-64 encoded data with header and footer lines. Preferred format in OpenSSL and most software based on it (e.g. Apache mod_ssl, stunnel).
 
+- Distinguished Encoding Rules (DER)
+> Binary format. Preferred format in Windows environments. Also the official format for Internet download of certificates and CRLs.
 
 # `PKI Examples`
+The examples are meant to be done in order, each providing the basis for the ones that follow. They are relatively low on prose, we prefer to let the configuration files and command lines speak for themselves.
 
+You will find a reference section at the bottom of each page, with links to relevant parts of the OpenSSL documentation. Please use these links for details on command line options and configuration file settings.
+
+- We recommend at least OpenSSL 3.0.5. Check with:
+
+  
 
 
 # `Resources`
