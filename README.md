@@ -74,13 +74,13 @@ While we usually talk about PKI in the context of web security, it comes in hand
 > PKI is an essential technology for modern security, serving as a foundation for modern web security. While PKI can seem intimidating at first, it isn’t as hard to understand once we see what problems it tries to solve, and know about the cryptographic principles that make it work. Not everyone needs to know the technical details of how PKI works, but it’s something that everyone in cybersecurity should have a basic knowledge of.
 
 
-## `PKI Concepts`
+# `PKI Concepts`
 
 **An X.509 PKI is a security architecture that uses well-established cryptographic mechanisms to support use-cases like email protection and web server authentication.** In this regard it is similar to other systems based on public-key cryptography, for example OpenPGP [RFC 4880]. In the realm of X.509 however, and thanks to its roots in a globe-spanning scheme devised by the telecom industry [X.400], these mechanisms come with a fair amount of administrative overhead.
 
 > One thing to keep in mind is that X.509 is not an application, but a specification upon which applications like Secure Multipurpose Internet Mail Extensions (S/MIME) and Transport Layer Security (TLS) are based. The building blocks are very generic and derive most of their meaning from the relations that exist/are established between them. It’s called an infrastructure for a reason.
 
-### PKI Process
+## PKI Process
 
 #### 1 - A requestor generates a CSR and submits it to the CA.
 
@@ -88,7 +88,7 @@ While we usually talk about PKI in the context of web security, it comes in hand
 
 #### 3 - Should the certificate at some point be revoked, the CA adds it to its CRL.
 
-### PKI Components
+## PKI Components
 
 #### Public Key Infrastructure (PKI)
 > Security architecture where trust is conveyed through the signature of a trusted CA.
@@ -112,7 +112,7 @@ While we usually talk about PKI in the context of web security, it comes in hand
 > Document describing structure and processes of a CA.
 
 
-### CA Types
+## CA Types
 
 ### Certificate Types
 - Root CA
@@ -124,7 +124,13 @@ While we usually talk about PKI in the context of web security, it comes in hand
 - Signing CA
 > CA at the bottom of a PKI hierarchy. Issues only user certificates.
 
+## Certificate Types
 
+
+## File Formats
+
+
+# Resources
 
 ## `Root Certificate Programs`  
 
