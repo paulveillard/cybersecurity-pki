@@ -124,12 +124,14 @@ While we usually talk about PKI in the context of web security, it comes in hand
 - Signing CA
 > CA at the bottom of a PKI hierarchy. Issues only user certificates.
 
-## Certificate Types
+## `Certificate Types`
+
+## `File Formats`
+
+
 
 # `PKI Examples`
 
-
-## `File Formats`
 
 
 # `Resources`
