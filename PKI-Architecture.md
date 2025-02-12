@@ -127,6 +127,7 @@ Publicly trusted certificates must also always include specific information in a
 Apart from the certificate itself, private PKI allows for full control of the identity and credentials verification procedures as well. A customer’s own access control systems (such as single sign-ons or LDAP directories) can be integrated with the private PKI service to easily provide certificates to parties already trusted by the operator. In contrast, a publicly trusted PKI must perform strict manual and automated checks and validation against qualified databases before issuing any certificate
 
 ## 2 - What is PKI Architecture?
+-  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
 ### 2.1 - 6 Key Components of PKI
 
@@ -148,7 +149,21 @@ To better understand how PKI works, you first need to know what’s involved in 
 - **Proper certificate management tools, policies, processes, and procedures** — This includes the use of a certificate management tools such as a certificate manager.
 
 ### 2.2 - The 3 Main Elements of Public Key Infrastructure
--  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
+
+
+Digital certificates. These are small digital files that enable identity and encryption for a variety of use cases on the internet. Each certificate contains a wealth of identifying information about the organization or entity it’s issued to (depending on the validation level it’s issued with) but has a finite lifespan. Common digital certificate categories include:
+SSL/TLS certificates — These certificates are what make the secure padlock icons appear in your website visitors’ browsers and the “not secure” warnings disappear. SSL/TLS certificates come with three validation level options — domain validation (DV), organization validation (OV), and extended validation (EV).
+Code signing certificates —These digital certificates help you secure your supply chain for software updates and offer users assurance that your software is legitimate and hasn’t been tampered with. Code signing certificates come with one of two validation levels — standard or extended validation — and the latter makes Windows Defender SmartScreen warnings disappear because they make your software automatically trusted by Windows operating systems and browsers!
+Document signing certificates — These digital certificates use cryptographic functions (hashing) and digital signatures allow you to prove to users that your document is legitimate and hasn’t been altered since you signed it.
+Email signing certificates — These digital certificates, also known as S/MIME certificates, provide end-to-end encryption by encrypting your email content and attachments prior to them leaving your inbox. Email signing certificates also provide digital identity by allowing you to digitally sign your messages so that your recipients can verify that the information hasn’t been altered and that it was actually you who sent it.
+Client authentication certificates — These digital certificates enable passwordless authentication on your internal network. What this means is that authorized users can log in securely and verify their identities without having to remember or type in a cumbersome password and complete multi-factor authentication.
+Public-private cryptographic key pairs. These are the cryptographic tools you need to encrypt (public key) and decrypt (private key) information over the internet.
+Public key — This key encrypts data to prevent unauthorized access.
+Private key — This key decrypts data and is kept secret by the owner of the associated certificate.
+Certification authorities. One of the key components of any PKI architecture is a certification authority, or what’s more commonly called a certificate authority or CA. An organization can rely on one or more CAs within its PKI. When people think of a CA, they traditionally think of it in the sense of a root CA or an issuing CA. However, there are also intermediate CAs as well. Here’s a quick description of each to help you differentiate between the three of them:
+Root CAs: A root CA depends on a root certificate, which must added to the trust store on every device that will be using the certificates you plan to issue for it to be trusted. Both public and private CAs have root CAs and certificates. Because all certificates tie back to these root certificates, CAs do everything within their power to keep their corresponding private keys secure. This typically involves storing root CA private keys offline in secure environments and by using hardware security modules (HSMs).
+Intermediate CAs: This type of CA serves as one or more links in the certificate chain and is digitally signed/issued by the root CA. They’re responsible for issuing endpoint certificates (like SSL/TLS certificates that you use to secure websites) to your organization. Essentially, intermediate CAs serve as the middleman between endpoint certificates and the root certificates they eventually chain back to.
+Issuing CAs: Sometimes, intermediate CAs and issuing CAs are one in the same and sometimes they’re separate. The difference depends on your CA hierarchy and how many tiers you have in your PKI architecture. (Read on to understand what we mean when we talk about PKI architecture tiers…)
 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
 
