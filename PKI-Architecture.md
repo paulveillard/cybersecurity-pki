@@ -12,8 +12,13 @@
 > We’ll break down everything you need to know about public key infrastructure architectures and what they look like with examples of different PKI architecture diagrams and visuals
 
 
+Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
+- It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption. Today we’re going to talk specifically about PKI architecture — the systems, servers, and other stuff that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
+PKI architecture exists in multiple forms depending on what you’re doing with PKI:
 
+Publicly Trusted PKI. If you want your digital certificates to always be recognized and publicly trusted by clients and operating systems in public channels (i.e., on the internet), you’ll need to use digital certificates that are issued by a publicly trusted certificate authority. In this scenario, the PKI architecture is fully run by the certificate authority (i.e., you just put their certificates to work to secure public-facing resources), but we’ll still go over the basics if you’re curious.
+Privately Trusted PKI. If you’re using PKI to secure internal assets or networks, then running a private CA might be the best option. In this scenario, you’ll need to make your own decisions about the PKI architecture — we’ll go over the basics of what you need to know in this article.
 
 
 http://www.linux.com/community/blogs/133-general-linux/742528-pki-implementation-for-the-linux-admin
