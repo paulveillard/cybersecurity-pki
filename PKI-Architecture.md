@@ -171,15 +171,16 @@ The chain of trust is a series of certificates (root, intermediate, and leaf cer
 
 #### `2.2.2 - Public-private cryptographic key pairs`
 These are the cryptographic tools you need to encrypt (public key) and decrypt (private key) information over the internet.
-Public key — This key encrypts data to prevent unauthorized access.
-Private key — This key decrypts data and is kept secret by the owner of the associated certificate.
+- Public key — This key encrypts data to prevent unauthorized access.
+- Private key — This key decrypts data and is kept secret by the owner of the associated certificate.
 
 
 #### `2.2.3 - Certification authorities` 
 One of the key components of any PKI architecture is a certification authority, or what’s more commonly called a certificate authority or CA. An organization can rely on one or more CAs within its PKI. When people think of a CA, they traditionally think of it in the sense of a root CA or an issuing CA. However, there are also intermediate CAs as well. Here’s a quick description of each to help you differentiate between the three of them:
-Root CAs: A root CA depends on a root certificate, which must added to the trust store on every device that will be using the certificates you plan to issue for it to be trusted. Both public and private CAs have root CAs and certificates. Because all certificates tie back to these root certificates, CAs do everything within their power to keep their corresponding private keys secure. This typically involves storing root CA private keys offline in secure environments and by using hardware security modules (HSMs).
-Intermediate CAs: This type of CA serves as one or more links in the certificate chain and is digitally signed/issued by the root CA. They’re responsible for issuing endpoint certificates (like SSL/TLS certificates that you use to secure websites) to your organization. Essentially, intermediate CAs serve as the middleman between endpoint certificates and the root certificates they eventually chain back to.
-Issuing CAs: Sometimes, intermediate CAs and issuing CAs are one in the same and sometimes they’re separate. The difference depends on your CA hierarchy and how many tiers you have in your PKI architecture. (Read on to understand what we mean when we talk about PKI architecture tiers…)
+
+- Root CAs: A root CA depends on a root certificate, which must added to the trust store on every device that will be using the certificates you plan to issue for it to be trusted. Both public and private CAs have root CAs and certificates. Because all certificates tie back to these root certificates, CAs do everything within their power to keep their corresponding private keys secure. This typically involves storing root CA private keys offline in secure environments and by using hardware security modules (HSMs).
+- Intermediate CAs: This type of CA serves as one or more links in the certificate chain and is digitally signed/issued by the root CA. They’re responsible for issuing endpoint certificates (like SSL/TLS certificates that you use to secure websites) to your organization. Essentially, intermediate CAs serve as the middleman between endpoint certificates and the root certificates they eventually chain back to.
+- Issuing CAs: Sometimes, intermediate CAs and issuing CAs are one in the same and sometimes they’re separate. The difference depends on your CA hierarchy and how many tiers you have in your PKI architecture. (Read on to understand what we mean when we talk about PKI architecture tiers…)
 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
 
