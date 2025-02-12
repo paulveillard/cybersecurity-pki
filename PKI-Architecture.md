@@ -22,9 +22,10 @@ Public key infrastructure, or PKI, is the (often unsung) hero of internet securi
 
 Fundamentally, a PKI has two functions:
 
-to manage a collection of public[02] and private keys, and
-to bind each key with the identity of an individual entity such as a person, or organization.
-Binding is established through the issuance of electronic identity documents, called digital certificates [03]. Certificates are cryptographically signed with a private key so that client software (such as browsers) can use the corresponding public key to verify a certificate’s authenticity (i.e. it was signed by the correct private key) and integrity (i.e. it was not modified in any way).
+- to manage a collection of public[02] and private keys, and
+- to bind each key with the identity of an individual entity such as a person, or organization.
+
+> Binding is established through the issuance of electronic identity documents, called digital certificates [03]. Certificates are cryptographically signed with a private key so that client software (such as browsers) can use the corresponding public key to verify a certificate’s authenticity (i.e. it was signed by the correct private key) and integrity (i.e. it was not modified in any way).
 
 
 
