@@ -38,7 +38,16 @@ Fundamentally, a PKI has two functions:
 
 ### 1.1 - First, How Does PKI Work>
 
-> Public key infrastructure is a key part of your everyday life in the cyber world. It secures everything from the login credentials in your browser to the sensitive data you share via email — here’s a breakdown of how PKI works
+> Public key infrastructure is a key part of your everyday life in the cyber world. It secures everything from the login credentials in your browser to the sensitive data you share via email — here’s a breakdown of how PKI works:
+
+ <p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
+
+ <p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
 - Public key infrastructure is intrinsic to cyber security. It’s the crust to your pie and the wind to your sail; basically, PKI is one of the things that makes cyber security work.
 
@@ -119,7 +128,8 @@ Apart from the certificate itself, private PKI allows for full control of the id
 
 ## 2 - What is PKI Architecture?
 
--
+2.1 6 Components of PKI
+2.2 - The 3 Main Elements of Public Key Infrastructure
 -  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
@@ -128,7 +138,4 @@ PKI architecture exists in multiple forms depending on what you’re doing with 
 
 
 
- <p align="center">
-  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
-</p>
 
