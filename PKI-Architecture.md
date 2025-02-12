@@ -1,3 +1,9 @@
+## PKI Architecture: Fundamentals of Designing a Private PKI System
+
+
+
+
+
 http://www.linux.com/community/blogs/133-general-linux/742528-pki-implementation-for-the-linux-admin
 
 Public-key infrastructure (PKI) is what makes internet encryption and digital signatures work. When you visit your bank website you are told it is encrypted and verified. 
