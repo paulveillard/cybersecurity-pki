@@ -38,6 +38,13 @@ Fundamentally, a PKI has two functions:
 
 ### 1.1 -  How PKI Works
 
+> Public key infrastructure is a key part of your everyday life in the cyber world. It secures everything from the login credentials in your browser to the sensitive data you share via email — here’s a breakdown of how PKI works
+
+- Public key infrastructure is intrinsic to cyber security. It’s the crust to your pie and the wind to your sail; basically, PKI is one of the things that makes cyber security work.
+
+- Public key infrastructure, or PKI, is often talked about as a type of cyber security technology or framework — but it’s more than that. You likely know that the term relates to encryption, but do you actually know what it does or how PKI works?
+
+
 
 ### 1.2 - Publicly trusted and Privately trusted PKI
 
