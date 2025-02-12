@@ -1,6 +1,9 @@
 ## PKI Architecture: Fundamentals of Designing a Private PKI System
 
-
+## Table of Contents
+- [What Is PKI Architecture? A Definition of PKI Architecture](#)
+- [What Is PKI? A 2-Minute Review of a Few Key Concepts](#)
+- {The #1 Rule of PKI: You Do Not Talk About Your Private Key](#)
 
 
 
