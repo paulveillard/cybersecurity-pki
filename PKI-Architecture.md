@@ -32,7 +32,16 @@ Fundamentally, a PKI has two functions:
 ### 1.1 -  How PKI Works
 
 
+### 1.2 - Publicly trusted and Privately trusted PKI
 
+While both PKI configurations provide the same function, their distinction is quite straightforward.
+
+- Public PKIs are automatically trusted by client software,
+- while private PKIs must be manually trusted by the user (or, in corporate and IoT environments, deployed to all devices by the domain administrator) before any certificates issued by that PKI can be validated.
+
+An organization that maintains a publicly trusted PKI is called a Certificate Authority (CA). To become publicly trusted, a CA must be audited against standards such as the CA/B Forum’s Baseline Requirements [04] and be accepted into public trust stores like the Microsoft Trusted Root Store Program.
+
+Although private PKI implementations can be just as secure as their public counterparts, they are not trusted by default because they are not provably compliant with these requirements and accepted into trust programs.
 
 
 #### Publicly Trusted PKI. 
@@ -43,6 +52,9 @@ If you’re using PKI to secure internal assets or networks, then running a priv
 
 
 Public-key infrastructure (PKI) is what makes internet encryption and digital signatures work. When you visit your bank website you are told it is encrypted and verified. 
+
+
+
 
 
 ## 2 - What is PKI Architecture?
