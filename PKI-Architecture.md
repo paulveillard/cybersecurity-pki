@@ -19,7 +19,10 @@
 
 Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
 
-public-vs-private-pki-comparison
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/public-vs-private-pki-comparison-0.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
 - It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption.
 
   
