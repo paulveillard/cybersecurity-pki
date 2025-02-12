@@ -51,10 +51,12 @@ If you want your digital certificates to always be recognized and publicly trust
 If you’re using PKI to secure internal assets or networks, then running a private CA might be the best option. In this scenario, you’ll need to make your own decisions about the PKI architecture — we’ll go over the basics of what you need to know in this article.
 
 
-Public-key infrastructure (PKI) is what makes internet encryption and digital signatures work. When you visit your bank website you are told it is encrypted and verified. 
+> Public-key infrastructure (PKI) is what makes internet encryption and digital signatures work. When you visit your bank website you are told it is encrypted and verified. 
 
 
+### 1.3 - Why choose a publicly trusted PKI?
 
+### 1.4 - Why choose a privately trusted PKI?
 
 
 ## 2 - What is PKI Architecture?
