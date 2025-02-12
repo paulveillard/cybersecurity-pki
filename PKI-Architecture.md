@@ -130,6 +130,22 @@ Apart from the certificate itself, private PKI allows for full control of the id
 
 ### 2.1 - 6 Key Components of PKI
 
+To better understand how PKI works, you first need to know what’s involved in it. Of course, there are several critical components within the public key infrastructure — and we’ll dive into each of these topics more in depth a little later in the article:
+
+- **X.509 digital certificates** — These types of certificates include a key, information about the identity of the owner (of the certificate and keys), and the digital signature of the certificate authority. These types of certificates include:
+  - SSL/TLS website security certificates,
+  - S/MIME (client authentication) certificates,
+  - Code signing certificates, and
+  - Document signing certificates.
+- **Digital signatures** — Digital signatures are what guarantees that a message, file, or data hasn’t been altered in any way. It uses an encrypted hash of a message to ensure the integrity of your data by making it so that nobody can modify the message without the recipient finding out.
+
+- **Public and private key pairs (asymmetric and symmetric)** — PKI works because of the key pairs that encrypt and decrypt data. In asymmetric encryption, there’s a public key that’s shared with everyone and a matching private key that’s kept secret. In symmetric encryption, there is one key that both parties use to communicate.
+
+- **Certificate authorities (CAs)** — Certificate authorities are what make the whole PKI system trustworthy. CAs verify parties and issue certificates. Without CAs, PKI simply wouldn’t work because anybody could just issue certificates to themselves saying that they’re Amazon.com, Bill Gates, or whomever they feel like impersonating.
+
+- **Chain of trust** — The chain of trust is a series of certificates (root, intermediate, and leaf certificates) that links back to the issuing CA who signed off on it.
+
+- **Proper certificate management tools, policies, processes, and procedures** — This includes the use of a certificate management tools such as a certificate manager.
 
 ### 2.2 - The 3 Main Elements of Public Key Infrastructure
 -  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
