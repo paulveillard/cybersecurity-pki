@@ -128,8 +128,10 @@ Apart from the certificate itself, private PKI allows for full control of the id
 
 ## 2 - What is PKI Architecture?
 
-2.1 6 Components of PKI
-2.2 - The 3 Main Elements of Public Key Infrastructure
+### 2.1 - 6 Key Components of PKI
+
+
+### 2.2 - The 3 Main Elements of Public Key Infrastructure
 -  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
