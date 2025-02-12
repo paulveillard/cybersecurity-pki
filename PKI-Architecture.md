@@ -1,9 +1,10 @@
 ## PKI Architecture: Fundamentals of Designing a Private PKI System
 
 ## Table of Contents
+- [1 - What Is PKI? A 2-Minute Review of a Few Key Concepts](#)
+  - [1.1 How PKI Works](#)
+  - 
 - [1 - What Is PKI Architecture? A Definition of PKI Architecture](#)
-- [2 - What Is PKI? A 2-Minute Review of a Few Key Concepts](#)
-  - [How PKI Works](#)
 - [3 - The #1 Rule of PKI: You Do Not Talk About Your Private Key](#)
 - [4 - One-, Two and Three-Tier Trust Hierarchies in PKI Architecture](#)
 - [5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)](#)
@@ -12,7 +13,7 @@
 
 > We’ll break down everything you need to know about public key infrastructure architectures and what they look like with examples of different PKI architecture diagrams and visuals
 
-1 - What is Public Key Infrastruture? 
+## 1 - What is Public Key Infrastruture (PKI)? 
 
 Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
 - It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption. Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
