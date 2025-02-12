@@ -11,8 +11,8 @@
 - [4 - One-, Two and Three-Tier Trust Hierarchies in PKI Architecture](#)
 - [5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)](#)
   - PKI Architecture #1: Public CA
-  - PKIPKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)Architecture #2: Private CA (Internal CA)
-  - 
+  - PKI Architecture #2: Private CA (Internal CA)
+  - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)
 - [6 - How to implement a hybrid PKI solution on AWS](#)
 
 
