@@ -55,9 +55,20 @@ If you’re using PKI to secure internal assets or networks, then running a priv
 
 
 ### 1.3 - Why choose a publicly trusted PKI?
+- Being publicly trusted means that publicly trusted root certificates (associating the identity of a CA with their official public keys) are already distributed in most clients. Browsers, operating systems, and other client software are shipped with a built-in list of such trusted public keys that are used to validate certificates they encounter. 
+- (Responsible vendors can also be expected to update these lists when updating their software.) In contrast, privately trusted root certificates (needed for a private PKI) must be manually installed in a client before certificates from such private PKIs can be validated.
+
+> As a consequence, if you are trying to protect a publicly accessible web site or other on-line resource, a certificate issued from a publicly trusted PKI (i.e., a CA) is the way to go, since requiring each visitor to manually install a private PKI’s root certificate into their browser is not practical (and the consistent security warnings likely to result will negatively affect your site’s reputation).
 
 ### 1.4 - Why choose a privately trusted PKI?
 
+- Public PKIs must strictly follow regulations and undergo regular audits, while a privately trusted PKI may forgo auditing requirements and deviate from standards in any way its operator sees fit. Although this can mean that they do not follow the best practices as rigorously, it also allows customers using a private PKI more freedom regarding their certificate policies and operations.
+
+> One example: the Baseline Requirements prohibit publicly trusted CAs to issue certificates for internal domains (e.g. example.local). A private PKI can, if desired, issue certificates for any domain as needed, including such local domains.
+
+Publicly trusted certificates must also always include specific information in a manner strictly defined by their controlling regulations and formatted in a certificate profile mapping to the accepted X.509 standard for public certificates. However, some customers may require a custom certificate profile, specifically tailored to their organization’s anticipated uses and security concerns. A private PKI can issue certificates using a specialized certificate profile.
+
+Apart from the certificate itself, private PKI allows for full control of the identity and credentials verification procedures as well. A customer’s own access control systems (such as single sign-ons or LDAP directories) can be integrated with the private PKI service to easily provide certificates to parties already trusted by the operator. In contrast, a publicly trusted PKI must perform strict manual and automated checks and validation against qualified databases before issuing any certificate
 
 ## 2 - What is PKI Architecture?
 
