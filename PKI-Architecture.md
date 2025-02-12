@@ -3,6 +3,7 @@
 ## Table of Contents
 - [1 - What Is PKI Architecture? A Definition of PKI Architecture](#)
 - [2 - What Is PKI? A 2-Minute Review of a Few Key Concepts](#)
+  - [How PKI Works](#)
 - [3 - The #1 Rule of PKI: You Do Not Talk About Your Private Key](#)
 - [4 - One-, Two and Three-Tier Trust Hierarchies in PKI Architecture](#)
 - [5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)](#)
@@ -17,11 +18,12 @@ Public key infrastructure, or PKI, is the (often unsung) hero of internet securi
 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
 
-Publicly Trusted PKI. If you want your digital certificates to always be recognized and publicly trusted by clients and operating systems in public channels (i.e., on the internet), you’ll need to use digital certificates that are issued by a publicly trusted certificate authority. In this scenario, the PKI architecture is fully run by the certificate authority (i.e., you just put their certificates to work to secure public-facing resources), but we’ll still go over the basics if you’re curious.
-Privately Trusted PKI. If you’re using PKI to secure internal assets or networks, then running a private CA might be the best option. In this scenario, you’ll need to make your own decisions about the PKI architecture — we’ll go over the basics of what you need to know in this article.
+#### Publicly Trusted PKI. 
+If you want your digital certificates to always be recognized and publicly trusted by clients and operating systems in public channels (i.e., on the internet), you’ll need to use digital certificates that are issued by a publicly trusted certificate authority. In this scenario, the PKI architecture is fully run by the certificate authority (i.e., you just put their certificates to work to secure public-facing resources), but we’ll still go over the basics if you’re curious.
 
+##### Privately Trusted PKI. 
+If you’re using PKI to secure internal assets or networks, then running a private CA might be the best option. In this scenario, you’ll need to make your own decisions about the PKI architecture — we’ll go over the basics of what you need to know in this article.
 
-http://www.linux.com/community/blogs/133-general-linux/742528-pki-implementation-for-the-linux-admin
 
 Public-key infrastructure (PKI) is what makes internet encryption and digital signatures work. When you visit your bank website you are told it is encrypted and verified. 
 
