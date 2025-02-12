@@ -2,7 +2,7 @@
 
 ## Table of Contents
 - [1 - What Is PKI? A 2-Minute Review of a Few Key Concepts](#)
-  - [1.1 How PKI Works](#)
+  - [1.1 - First, How Does PKI Work](#)
   - [1.2 - Publicly trusted and Privately trusted PKI](#)
   - [1.3 - Why choose a publicly trusted PKI?](#)
   - [1.4 - Why choose a privately trusted PKI?](#)
@@ -36,7 +36,7 @@ Fundamentally, a PKI has two functions:
 
 
 
-### 1.1 -  How PKI Works
+### 1.1 - First, How Does PKI Work>
 
 > Public key infrastructure is a key part of your everyday life in the cyber world. It secures everything from the login credentials in your browser to the sensitive data you share via email — here’s a breakdown of how PKI works
 
