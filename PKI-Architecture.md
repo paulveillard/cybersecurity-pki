@@ -18,7 +18,11 @@
 ## 1 - What is Public Key Infrastruture (PKI)? 
 
 Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
+
+public-vs-private-pki-comparison
 - It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption.
+
+  
 
 Fundamentally, a PKI has two functions:
 
