@@ -41,7 +41,7 @@ Fundamentally, a PKI has two functions:
 > Public key infrastructure is a key part of your everyday life in the cyber world. It secures everything from the login credentials in your browser to the sensitive data you share via email — here’s a breakdown of how PKI works:
 
  <p align="center">
-  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/how-pki-works-overview.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 
