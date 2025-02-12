@@ -16,7 +16,7 @@
 
 > We’ll break down everything you need to know about public key infrastructure architectures and what they look like with examples of different PKI architecture diagrams and visuals
 
-## 1 - What is Public Key Infrastruture (PKI)? 
+## `1 - What is Public Key Infrastruture (PKI)?`
 
 Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
 
