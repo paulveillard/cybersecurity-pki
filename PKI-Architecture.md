@@ -3,7 +3,8 @@
 ## Table of Contents
 - [1 - What Is PKI? A 2-Minute Review of a Few Key Concepts](#)
   - [1.1 How PKI Works](#)
-  - [Publicly trusted and Privately trusted PKI](#)
+  - [1.2 - Publicly trusted and Privately trusted PKI](#)
+  - [1.3 - Why choose a publicly trusted PKI?](#)
 - [1 - What Is PKI Architecture? A Definition of PKI Architecture](#)
 - [3 - The #1 Rule of PKI: You Do Not Talk About Your Private Key](#)
 - [4 - One-, Two and Three-Tier Trust Hierarchies in PKI Architecture](#)
