@@ -31,23 +31,6 @@ Fundamentally, a PKI has two functions:
 
 ### 1.1 -  How PKI Works
 
-Most have heard the names of Verisign, Network Solutions, and GoDaddy. These companies along with many more are in the business of allowing the public to trust an organization's encryption keys and are referred to as Registration Authorities (RA)
- 
-
-If an organization, let’s say your bank, wants to encrypt their website that you use to manage your accounts they would first need to generate a private encryption key. The private key is something that should remain just that; private. With the private key one can extract a public key. While a public key can be created from a private key, the reverse should not be possible. 
- 
- <p align="center">
-  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
-</p>
-
-Now the fun part, any messages encrypted using this private key can be decrypted via the public key and vice versa. The bank now decides that they want a third party to verify the authenticity of their private/public key pair because without it their users get a warning in their web browser stating that the site shouldn’t be trusted. I am sure most of you have seen this error before:
-
-The bank sends their public key to an RA and pays for them to digitally sign it with their Root Certificate Authority (CA). This CA is nothing more than another public/private key pair. Remember how I said that anything encrypted with a private key can be decrypted with the public key? At the time it may not have sounded like a good idea to have any message encrypted that can be decrypted by anyone. In this case, the RA is the only one with access to their private key and everyone has their public key (You literally do have it, every modern operating system maintains a copy of these trusted Root Certificates). The RA adds a message to the bank’s public key using their private key with the goal that your web browser should now be able to decrypt and view the message. If this is all successful, you do not see the nasty page like the image above and you can be assured that this site is using a certificate that the third party has verified..
-
-So you now have your bank’s public key. This means you can encrypt a message with it and only the bank can see that message using their private key. The bank does the same thing to send you messages. When you initiate a connection with a web browser to a site that uses HTTPS, you also send your own public key to your bank. They will use that to encrypt messages and send back to you for you to decrypt using your private key. Since you do not need to supply any authenticity of who you are to the website, there is no problem with your public/private keys being generated dynamically.
-
-Lastly, public/private key encryption is wildly inefficient due to the existence of the public key. In order for the public key to be securely derived from the private, we have to use very large key sizes. At the time of this article I recommend 4096-bit key size. 
-
 
 
 
@@ -93,3 +76,31 @@ However, If we train our users to ignore those security warnings about the inabi
 Using the brief description of PKI above, imagine if there was a malicious user somewhere on the internet, or more likely somewhere locally, placed directly between your computer and the server. When the initial key exchange takes place the attacker can intercept your public key, and send you theirs instead of the server’s of which you are trying to talk to. His public key will most likely not be digitally signed with the same domain name as the site you are visiting, although if this was a targeted attack on a particular server it could be possible. 
 
 Since the attacker likely wants to steal data, he will then proxy a connection to the server your originally wanted to go to, but instead of your public key going to the server it would be the attacker’s. This places the attackers computer directly between you and the server and will be able to capture and view any data sent between both machines. Well, that is if the user has been trained to simply ignore the warning they got from their web browser.
+
+
+
+
+
+#### how PKI works
+
+Most have heard the names of Verisign, Network Solutions, and GoDaddy. These companies along with many more are in the business of allowing the public to trust an organization's encryption keys and are referred to as Registration Authorities (RA)
+ 
+
+If an organization, let’s say your bank, wants to encrypt their website that you use to manage your accounts they would first need to generate a private encryption key. 
+- The private key is something that should remain just that; private.
+ - With the private key one can extract a public key.
+- While a public key can be created from a private key, the reverse should not be possible. 
+ 
+
+Now the fun part, any messages encrypted using this private key can be decrypted via the public key and vice versa. The bank now decides that they want a third party to verify the authenticity of their private/public key pair because without it their users get a warning in their web browser stating that the site shouldn’t be trusted. I am sure most of you have seen this error before:
+
+The bank sends their public key to an RA and pays for them to digitally sign it with their Root Certificate Authority (CA). This CA is nothing more than another public/private key pair. Remember how I said that anything encrypted with a private key can be decrypted with the public key? At the time it may not have sounded like a good idea to have any message encrypted that can be decrypted by anyone. In this case, the RA is the only one with access to their private key and everyone has their public key (You literally do have it, every modern operating system maintains a copy of these trusted Root Certificates). The RA adds a message to the bank’s public key using their private key with the goal that your web browser should now be able to decrypt and view the message. If this is all successful, you do not see the nasty page like the image above and you can be assured that this site is using a certificate that the third party has verified..
+
+So you now have your bank’s public key. This means you can encrypt a message with it and only the bank can see that message using their private key. The bank does the same thing to send you messages. When you initiate a connection with a web browser to a site that uses HTTPS, you also send your own public key to your bank. They will use that to encrypt messages and send back to you for you to decrypt using your private key. Since you do not need to supply any authenticity of who you are to the website, there is no problem with your public/private keys being generated dynamically.
+
+Lastly, public/private key encryption is wildly inefficient due to the existence of the public key. In order for the public key to be securely derived from the private, we have to use very large key sizes. At the time of this article I recommend 4096-bit key size. 
+
+ <p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
