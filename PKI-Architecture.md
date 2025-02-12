@@ -44,6 +44,21 @@ Fundamentally, a PKI has two functions:
 
 - Public key infrastructure, or PKI, is often talked about as a type of cyber security technology or framework — but it’s more than that. You likely know that the term relates to encryption, but do you actually know what it does or how PKI works?
 
+There are two things PKI does to secure communications:
+
+- **Authentication** — This ensures that the other party is the legitimate server/individual that you’re trying to communicate with.
+- **Encryption** — This makes sure that no other parties can read your communications.
+
+To better understand how PKI works, we first need to make this whole process all a more understandable. So, let’s consider the SSL certificate that this website is using as an example. See the padlock icon in your browser? That means this website is using an SSL certificate, which is based on PKI. SSL uses PKI to do two things:
+
+Your browser authenticates that it’s connected to the correct server that’s owned by thesslstore.com.
+All of the data that passes between your browser and our web server is encrypted.
+
+**In a more technical sense, PKI is a combination of cryptographic technologies, policies and procedures that you use to secure data in the digital world and to authenticate yourself. The term also relates to the issuance, use, storage, distribution, management, and revocation of digital certificates and keys — also known as the certificate lifecycle — as well as the entities that issue them.**
+
+In a roundabout way, what all of this means is that public key encryption is a two-key (asymmetric) cryptosystem that protects everything you do and the information you send and receive online. From the ecommerce transactions on your website to the emails that you send within your organization that contain sensitive information, the data is secure thanks to PKI
+
+> The main function of PKI is to distribute public keys to the right devices, software, and users who need them. This means that PKI is all about ensuring that your sensitive data doesn’t fall into the wrong hands.
 
 
 ### 1.2 - Publicly trusted and Privately trusted PKI
