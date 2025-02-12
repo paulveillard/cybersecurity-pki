@@ -7,10 +7,12 @@
   - [1.3 - Why choose a publicly trusted PKI?](#)
   - [1.4 - Why choose a privately trusted PKI?](#)
 - [2 - What Is PKI Architecture? A Definition of PKI Architecture](#)
-  - 
 - [3 - The #1 Rule of PKI: You Do Not Talk About Your Private Key](#)
 - [4 - One-, Two and Three-Tier Trust Hierarchies in PKI Architecture](#)
 - [5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)](#)
+  - PKI Architecture #1: Public CA
+  - PKIPKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)Architecture #2: Private CA (Internal CA)
+  - 
 - [6 - How to implement a hybrid PKI solution on AWS](#)
 
 
