@@ -47,11 +47,26 @@ Fundamentally, a PKI has two functions:
 There are two things PKI does to secure communications:
 
 - **Authentication** — This ensures that the other party is the legitimate server/individual that you’re trying to communicate with.
+
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/authentication.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
 - **Encryption** — This makes sure that no other parties can read your communications.
+
+  <p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/encryption.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
 To better understand how PKI works, we first need to make this whole process all a more understandable. So, let’s consider the SSL certificate that this website is using as an example. See the padlock icon in your browser? That means this website is using an SSL certificate, which is based on PKI. SSL uses PKI to do two things:
 
-Your browser authenticates that it’s connected to the correct server that’s owned by thesslstore.com.
+Your browser authenticates that it’s connected to the correct server that’s owned by example.com.
+
+  <p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-padlock.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
+
 All of the data that passes between your browser and our web server is encrypted.
 
 **In a more technical sense, PKI is a combination of cryptographic technologies, policies and procedures that you use to secure data in the digital world and to authenticate yourself. The term also relates to the issuance, use, storage, distribution, management, and revocation of digital certificates and keys — also known as the certificate lifecycle — as well as the entities that issue them.**
