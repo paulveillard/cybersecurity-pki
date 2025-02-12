@@ -6,7 +6,8 @@
   - [1.2 - Publicly trusted and Privately trusted PKI](#)
   - [1.3 - Why choose a publicly trusted PKI?](#)
   - [1.4 - Why choose a privately trusted PKI?](#)
-- [1 - What Is PKI Architecture? A Definition of PKI Architecture](#)
+- [2 - What Is PKI Architecture? A Definition of PKI Architecture](#)
+  - 
 - [3 - The #1 Rule of PKI: You Do Not Talk About Your Private Key](#)
 - [4 - One-, Two and Three-Tier Trust Hierarchies in PKI Architecture](#)
 - [5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)](#)
@@ -129,7 +130,7 @@ Apart from the certificate itself, private PKI allows for full control of the id
 ## 2 - What is PKI Architecture?
 -  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
-### 2.1 - 6 Key Components of PKI
+### 2.1 - 6 Key Components of Public Key Infrastructure (PKI)
 
 To better understand how PKI works, you first need to know what’s involved in it. Of course, there are several critical components within the public key infrastructure — and we’ll dive into each of these topics more in depth a little later in the article:
 
@@ -148,7 +149,7 @@ To better understand how PKI works, you first need to know what’s involved in 
 
 - **Proper certificate management tools, policies, processes, and procedures** — This includes the use of a certificate management tools such as a certificate manager.
 
-### 2.2 - The 3 Main Elements of Public Key Infrastructure
+### 2.2 - The 3 Main Elements of Public Key Infrastructure (PKI)
 
 
 Digital certificates. These are small digital files that enable identity and encryption for a variety of use cases on the internet. Each certificate contains a wealth of identifying information about the organization or entity it’s issued to (depending on the validation level it’s issued with) but has a finite lifespan. Common digital certificate categories include:
