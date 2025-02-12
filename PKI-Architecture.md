@@ -35,7 +35,7 @@ Most have heard the names of Verisign, Network Solutions, and GoDaddy. These com
 If an organization, let’s say your bank, wants to encrypt their website that you use to manage your accounts they would first need to generate a private encryption key. The private key is something that should remain just that; private. With the private key one can extract a public key. While a public key can be created from a private key, the reverse should not be possible. 
  
  <p align="center">
-  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/3.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-1.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 Now the fun part, any messages encrypted using this private key can be decrypted via the public key and vice versa. The bank now decides that they want a third party to verify the authenticity of their private/public key pair because without it their users get a warning in their web browser stating that the site shouldn’t be trusted. I am sure most of you have seen this error before:
