@@ -14,7 +14,7 @@
 
 
 Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
-- It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption. Today we’re going to talk specifically about PKI architecture — the systems, servers, and other stuff that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
+- It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption. Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
 
