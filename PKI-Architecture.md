@@ -37,7 +37,7 @@ Fundamentally, a PKI has two functions:
 
 
 
-### 1.1 - First, How Does PKI Work>
+### `1.1 - First, How Does PKI Work`
 
 > Public key infrastructure is a key part of your everyday life in the cyber world. It secures everything from the login credentials in your browser to the sensitive data you share via email — here’s a breakdown of how PKI works:
 
@@ -86,7 +86,7 @@ In a roundabout way, what all of this means is that public key encryption is a t
 > The main function of PKI is to distribute public keys to the right devices, software, and users who need them. This means that PKI is all about ensuring that your sensitive data doesn’t fall into the wrong hands.
 
 
-### 1.2 - Publicly trusted and Privately trusted PKI
+### `1.2 - Publicly trusted and Privately trusted PKI`
 
 While both PKI configurations provide the same function, their distinction is quite straightforward.
 
@@ -111,13 +111,13 @@ If you’re using PKI to secure internal assets or networks, then running a priv
 > Public-key infrastructure (PKI) is what makes internet encryption and digital signatures work. When you visit your bank website you are told it is encrypted and verified. 
 
 
-### 1.3 - Why choose a publicly trusted PKI?
+### `1.3 - Why choose a publicly trusted PKI?`
 - Being publicly trusted means that publicly trusted root certificates (associating the identity of a CA with their official public keys) are already distributed in most clients. Browsers, operating systems, and other client software are shipped with a built-in list of such trusted public keys that are used to validate certificates they encounter. 
 - (Responsible vendors can also be expected to update these lists when updating their software.) In contrast, privately trusted root certificates (needed for a private PKI) must be manually installed in a client before certificates from such private PKIs can be validated.
 
 > As a consequence, if you are trying to protect a publicly accessible web site or other on-line resource, a certificate issued from a publicly trusted PKI (i.e., a CA) is the way to go, since requiring each visitor to manually install a private PKI’s root certificate into their browser is not practical (and the consistent security warnings likely to result will negatively affect your site’s reputation).
 
-### 1.4 - Why choose a privately trusted PKI?
+### `1.4 - Why choose a privately trusted PKI?`
 
 - Public PKIs must strictly follow regulations and undergo regular audits, while a privately trusted PKI may forgo auditing requirements and deviate from standards in any way its operator sees fit. Although this can mean that they do not follow the best practices as rigorously, it also allows customers using a private PKI more freedom regarding their certificate policies and operations.
 
@@ -127,14 +127,14 @@ Publicly trusted certificates must also always include specific information in a
 
 Apart from the certificate itself, private PKI allows for full control of the identity and credentials verification procedures as well. A customer’s own access control systems (such as single sign-ons or LDAP directories) can be integrated with the private PKI service to easily provide certificates to parties already trusted by the operator. In contrast, a publicly trusted PKI must perform strict manual and automated checks and validation against qualified databases before issuing any certificate
 
-## 2 - What is PKI Architecture?
+## `2 - What is PKI Architecture?`
 -  Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
 
-### 2.1 - 6 Key Components of Public Key Infrastructure (PKI)
+### `2.1 - 6 Key Components of Public Key Infrastructure (PKI)`
 
 To better understand how PKI works, you first need to know what’s involved in it. Of course, there are several critical components within the public key infrastructure — and we’ll dive into each of these topics more in depth a little later in the article:
 
- #### 2.1.1 - X.509 digital certificates
+ #### `2.1.1 - X.509 digital certificates`
 These types of certificates include a key, information about the identity of the owner (of the certificate and keys), and the digital signature of the certificate authority. These types of certificates include:
   - SSL/TLS website security certificates,
   - S/MIME (client authentication) certificates,
@@ -142,25 +142,25 @@ These types of certificates include a key, information about the identity of the
   - Document signing certificates.
 
     
-#### 2.1.2 - Digital signatures** 
+#### `2.1.2 - Digital signatures`
  Digital signatures are what guarantees that a message, file, or data hasn’t been altered in any way. It uses an encrypted hash of a message to ensure the integrity of your data by making it so that nobody can modify the message without the recipient finding out.
 
-#### 2.1.3 - Public and private key pairs (asymmetric and symmetric)
+#### `2.1.3 - Public and private key pairs (asymmetric and symmetric)`
  PKI works because of the key pairs that encrypt and decrypt data. In asymmetric encryption, there’s a public key that’s shared with everyone and a matching private key that’s kept secret. In symmetric encryption, there is one key that both parties use to communicate.
 
-#### 2.1.4 - Certificate authorities (CAs)
+#### `2.1.4 - Certificate authorities (CAs)`
 Certificate authorities are what make the whole PKI system trustworthy. CAs verify parties and issue certificates. Without CAs, PKI simply wouldn’t work because anybody could just issue certificates to themselves saying that they’re Amazon.com, Bill Gates, or whomever they feel like impersonating.
 
-#### 2.1.5 - Chain of trust
+#### `2.1.5 - Chain of trust`
 The chain of trust is a series of certificates (root, intermediate, and leaf certificates) that links back to the issuing CA who signed off on it.
 
- #### 2.1.6 - Proper certificate management tools, policies, processes, and procedures
+ #### `2.1.6 - Proper certificate management tools, policies, processes, and procedures`
  This includes the use of a certificate management tools such as a certificate manager.
 
-### 2.2 - The 3 Main Elements of Public Key Infrastructure (PKI)
+### `2.2 - The 3 Main Elements of Public Key Infrastructure (PKI)`
 
 
-#### 2.2.1 - Digital certificates. 
+#### `2.2.1 - Digital certificates` 
 - These are small digital files that enable identity and encryption for a variety of use cases on the internet. Each certificate contains a wealth of identifying information about the organization or entity it’s issued to (depending on the validation level it’s issued with) but has a finite lifespan. Common digital certificate categories include:
   - SSL/TLS certificates — These certificates are what make the secure padlock icons appear in your website visitors’ browsers and the “not secure” warnings disappear. SSL/TLS certificates come with three validation level options — domain validation (DV), organization validation (OV), and extended validation (EV).
   - Code signing certificates —These digital certificates help you secure your supply chain for software updates and offer users assurance that your software is legitimate and hasn’t been tampered with. Code signing certificates come with one of two validation levels — standard or extended validation — and the latter makes Windows Defender SmartScreen warnings disappear because they make your software automatically trusted by Windows operating systems and browsers!
@@ -169,13 +169,13 @@ The chain of trust is a series of certificates (root, intermediate, and leaf cer
   - Client authentication certificates — These digital certificates enable passwordless authentication on your internal network. What this means is that authorized users can log in securely and verify their identities without having to remember or type in a cumbersome password and complete multi-factor authentication.
 
 
-#### 2.2.2 - Public-private cryptographic key pairs.
+#### `2.2.2 - Public-private cryptographic key pairs`
 These are the cryptographic tools you need to encrypt (public key) and decrypt (private key) information over the internet.
 Public key — This key encrypts data to prevent unauthorized access.
 Private key — This key decrypts data and is kept secret by the owner of the associated certificate.
 
 
-#### 2.2.3 - Certification authorities. 
+#### `2.2.3 - Certification authorities` 
 One of the key components of any PKI architecture is a certification authority, or what’s more commonly called a certificate authority or CA. An organization can rely on one or more CAs within its PKI. When people think of a CA, they traditionally think of it in the sense of a root CA or an issuing CA. However, there are also intermediate CAs as well. Here’s a quick description of each to help you differentiate between the three of them:
 Root CAs: A root CA depends on a root certificate, which must added to the trust store on every device that will be using the certificates you plan to issue for it to be trusted. Both public and private CAs have root CAs and certificates. Because all certificates tie back to these root certificates, CAs do everything within their power to keep their corresponding private keys secure. This typically involves storing root CA private keys offline in secure environments and by using hardware security modules (HSMs).
 Intermediate CAs: This type of CA serves as one or more links in the certificate chain and is digitally signed/issued by the root CA. They’re responsible for issuing endpoint certificates (like SSL/TLS certificates that you use to secure websites) to your organization. Essentially, intermediate CAs serve as the middleman between endpoint certificates and the root certificates they eventually chain back to.
