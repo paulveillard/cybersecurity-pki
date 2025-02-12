@@ -43,6 +43,9 @@ An organization that maintains a publicly trusted PKI is called a Certificate Au
 
 Although private PKI implementations can be just as secure as their public counterparts, they are not trusted by default because they are not provably compliant with these requirements and accepted into trust programs.
 
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/public-vs-private-pki-comparison.png?raw=true" alt="Sublime's custom image"/>
+</p>
 
 #### Publicly Trusted PKI. 
 If you want your digital certificates to always be recognized and publicly trusted by clients and operating systems in public channels (i.e., on the internet), you’ll need to use digital certificates that are issued by a publicly trusted certificate authority. In this scenario, the PKI architecture is fully run by the certificate authority (i.e., you just put their certificates to work to secure public-facing resources), but we’ll still go over the basics if you’re curious.
