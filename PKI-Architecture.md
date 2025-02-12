@@ -160,7 +160,7 @@ The chain of trust is a series of certificates (root, intermediate, and leaf cer
 ### 2.2 - The 3 Main Elements of Public Key Infrastructure (PKI)
 
 
-#### 1 - Digital certificates. 
+#### 2.2.1 - Digital certificates. 
 - These are small digital files that enable identity and encryption for a variety of use cases on the internet. Each certificate contains a wealth of identifying information about the organization or entity it’s issued to (depending on the validation level it’s issued with) but has a finite lifespan. Common digital certificate categories include:
   - SSL/TLS certificates — These certificates are what make the secure padlock icons appear in your website visitors’ browsers and the “not secure” warnings disappear. SSL/TLS certificates come with three validation level options — domain validation (DV), organization validation (OV), and extended validation (EV).
   - Code signing certificates —These digital certificates help you secure your supply chain for software updates and offer users assurance that your software is legitimate and hasn’t been tampered with. Code signing certificates come with one of two validation levels — standard or extended validation — and the latter makes Windows Defender SmartScreen warnings disappear because they make your software automatically trusted by Windows operating systems and browsers!
@@ -169,11 +169,14 @@ The chain of trust is a series of certificates (root, intermediate, and leaf cer
   - Client authentication certificates — These digital certificates enable passwordless authentication on your internal network. What this means is that authorized users can log in securely and verify their identities without having to remember or type in a cumbersome password and complete multi-factor authentication.
 
 
-#### 2 - Public-private cryptographic key pairs.
+#### 2.2.2 - Public-private cryptographic key pairs.
 These are the cryptographic tools you need to encrypt (public key) and decrypt (private key) information over the internet.
 Public key — This key encrypts data to prevent unauthorized access.
 Private key — This key decrypts data and is kept secret by the owner of the associated certificate.
-Certification authorities. One of the key components of any PKI architecture is a certification authority, or what’s more commonly called a certificate authority or CA. An organization can rely on one or more CAs within its PKI. When people think of a CA, they traditionally think of it in the sense of a root CA or an issuing CA. However, there are also intermediate CAs as well. Here’s a quick description of each to help you differentiate between the three of them:
+
+
+#### 2.2.3 - Certification authorities. 
+One of the key components of any PKI architecture is a certification authority, or what’s more commonly called a certificate authority or CA. An organization can rely on one or more CAs within its PKI. When people think of a CA, they traditionally think of it in the sense of a root CA or an issuing CA. However, there are also intermediate CAs as well. Here’s a quick description of each to help you differentiate between the three of them:
 Root CAs: A root CA depends on a root certificate, which must added to the trust store on every device that will be using the certificates you plan to issue for it to be trusted. Both public and private CAs have root CAs and certificates. Because all certificates tie back to these root certificates, CAs do everything within their power to keep their corresponding private keys secure. This typically involves storing root CA private keys offline in secure environments and by using hardware security modules (HSMs).
 Intermediate CAs: This type of CA serves as one or more links in the certificate chain and is digitally signed/issued by the root CA. They’re responsible for issuing endpoint certificates (like SSL/TLS certificates that you use to secure websites) to your organization. Essentially, intermediate CAs serve as the middleman between endpoint certificates and the root certificates they eventually chain back to.
 Issuing CAs: Sometimes, intermediate CAs and issuing CAs are one in the same and sometimes they’re separate. The difference depends on your CA hierarchy and how many tiers you have in your PKI architecture. (Read on to understand what we mean when we talk about PKI architecture tiers…)
