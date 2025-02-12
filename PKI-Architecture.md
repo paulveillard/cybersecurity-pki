@@ -12,6 +12,7 @@
 
 > We’ll break down everything you need to know about public key infrastructure architectures and what they look like with examples of different PKI architecture diagrams and visuals
 
+1 - What is Public Key Infrastruture? 
 
 Public key infrastructure, or PKI, is the (often unsung) hero of internet security. 
 - It’s the underlying framework that makes secure internet communications a reality through the use of public key encryption. Today we’re going to talk specifically about **PKI architecture** — *the systems, servers, and other stuff* that you need (most of which is found behind the scenes) — to harness the power of PKI for your business.
