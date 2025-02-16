@@ -187,7 +187,7 @@ One of the key components of any PKI architecture is a certification authority, 
 PKI architecture exists in multiple forms depending on what you’re doing with PKI:
 
 
-## 5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)
+## `5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)`
 
 ### 5.1 - PKI Architecture #1: Public CA
 
