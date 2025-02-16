@@ -192,6 +192,10 @@ PKI uses and applications vary from one business to the next. This section will 
 
 ### `5.1 - PKI Architecture #1: Public CA`
 
+When most people think of PKI architecture, their minds automatically go to public CAs. This includes companies like DigiCert, Sectigo, Entrust, and hundreds of others globally. However, the overwhelming majority of certificates are issued by a half dozen or so leading CAs.
+
+Public certificate authorities are publicly trusted because they adhere to specific industry rules and requirements. As such, they’re able to issue certificates that are also publicly trusted by operating systems, browsers, and mobile devices.
+
 ### `5.2 - PKI Architecture #2: Private CA (Internal CA)`
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
