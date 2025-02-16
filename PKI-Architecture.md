@@ -188,7 +188,8 @@ PKI architecture exists in multiple forms depending on what you’re doing with 
 
 
 ## 5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)
-  - [PKI Architecture #1: Public CA](#)
+
+### 5.1 - PKI Architecture #1: Public CA
   - [PKI Architecture #2: Private CA (Internal CA)](#)
   - [PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)](#)
 
