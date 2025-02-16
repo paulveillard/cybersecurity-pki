@@ -196,6 +196,15 @@ When most people think of PKI architecture, their minds automatically go to publ
 
 Public certificate authorities are publicly trusted because they adhere to specific industry rules and requirements. As such, they’re able to issue certificates that are also publicly trusted by operating systems, browsers, and mobile devices.
 
+The way it all works is like this:
+
+- You (the PKI admin) request your public CA certificates for your website, endpoint devices, etc. from the public CA.
+- All of the “magic” happens within the CA’s environment — they use their resources and personnel to validate your domain and/or organizational details.
+- Once the public CA verifies your organizational information, they issue publicly trusted certificates that meet industry standards and requirements.
+- Once the public CA issues the certificates, you must use your internal resources/personnel and follow internal policies to deploy the certificates across your public network.
+  
+Here’s a quick graphic that gives you a basic visual of what this process looks like:
+
 ### `5.2 - PKI Architecture #2: Private CA (Internal CA)`
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
