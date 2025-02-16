@@ -188,6 +188,7 @@ PKI architecture exists in multiple forms depending on what you’re doing with 
 
 
 ## `5 - Three (3) Examples of PKI Architecture (Uses and Diagrams)`
+PKI uses and applications vary from one business to the next. This section will explore each of these PKI architectures more in-depth and provide a diagram of each as a visual representation.
 
 ### `5.1 - PKI Architecture #1: Public CA`
 
