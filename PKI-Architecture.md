@@ -240,6 +240,14 @@ You can host your PKI on-prem or use a cloud-hosting provider such as Amazon Web
 
 Let’s take a quick peek at how it looks when you set up your private PKI via AWS:
 
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/hybrid-pki-solution-aws.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
+An overview of a hybrid PKI solution via AWS. Image source for this PKI architecture diagram: Amazon Web Services.
+
+For a closer look at the virtual private cloud (VPC) that is highlighted with the green box in the lower-right quadrant of the image and how that would look if you decided to go the cloud or hybrid PKI route, check out the following graphic:
+
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 
