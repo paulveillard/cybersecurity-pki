@@ -277,8 +277,12 @@ Because this is what they eat, sleep, and breathe PKI all day, every day, they�
 But what does this look like in terms of PKI architecture? We’re glad you asked. Let’s take the basic private PKI architecture graphic we shared earlier and update it to reflect changes relating to managed PKI:
 
 <p align="center">
-  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/microsoft-pki-aws-architecture-diagram-1024x546.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/mpki-pki-architecture.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+> A basic illustrative PKI architecture diagram that showcases which responsibilities are areas your organization is responsible for versus your chosen mPKI provider.
+> 
+As your organization’s PKI administrator, as you can see, many of the typical responsibilities and monotonous tasks no longer fall squarely on your shoulders when you work with an mPKI provider. Instead, there are only select things that you’ll be partially or fully responsible for implementing and managing — your mPKI partner handles the rest. This means you don’t have to worry about having to know everything yourself or hiring someone to fill specific skills gaps. You can just lean on the mPKI professionals to take care of most things for you.
 
+However, you still have full control over the things that matter to your organization, such as certificate profiles and validation requirements.
 
