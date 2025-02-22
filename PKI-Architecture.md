@@ -209,6 +209,7 @@ Here’s a quick graphic that gives you a basic visual of what this process look
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-architecture-when-using-public-ca.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+But what does a public CA’s PKI architecture actually look like? The CAs don’t like to disclose all the details of their architectures, but the following basic flowchart should give you a pretty basic idea of what it entails and how you interact with it:
 
 <p align="center">
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/public-certificate-authority.png?raw=true" alt="Sublime's custom image"/>
