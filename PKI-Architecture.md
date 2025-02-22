@@ -222,6 +222,12 @@ While publicly trusted certificates are important and serve many uses, they can�
 
 ### `5.2 - PKI Architecture #2: Private CA (Internal CA)`
 
+**Private PKI, private CA, internal PKI, or internal CA** — these are all different terms that describe the same thing. So, whatever you want to call it, private PKI boils down to having the PKI structure in place to secure your websites, services, devices, and other IT resources on your network.
+
+Want to issue private user authentication certificates that will be trusted within your network? Check. How about securing your virtual private network (VPN) access? Also check. IoT devices? Employee ID cards? Containerized environments? Check, check, check. At the risk of sounding like a late-night infomercial host, private PKI can be virtually everything you want it to be — you know, at least as far as securing your internal network and IT infrastructure goes.
+
+So, what does a private PKI architecture look like? Here’s a basic overview of what all of that entails:
+
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 
 
