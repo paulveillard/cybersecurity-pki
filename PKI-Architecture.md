@@ -209,6 +209,13 @@ Here’s a quick graphic that gives you a basic visual of what this process look
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/pki-architecture-when-using-public-ca.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/public-certificate-authority.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
+
+
 ### `5.2 - PKI Architecture #2: Private CA (Internal CA)`
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
