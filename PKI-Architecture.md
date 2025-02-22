@@ -270,5 +270,11 @@ For these reasons (among others), many organizations that want to have their own
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 Remember the 2009 phrase “There’s an App for That”? Well, the same can be said for the security services that you can outsource to experienced third-party providers, including the day-to-day management of your organization’s public key infrastructure. This is where a managed PKI service provider can make your work life a whole lot easier.
 
+Several reputable CAs and PKI vendors offer what’s known within the industry as “PKI-as-a-service.” An mPKI provider is a third party that handles everything from setting up and rolling out your organization’s private CA to supporting it in the long run. They use their internal resources to facilitate this process.
+
+Because this is what they eat, sleep, and breathe PKI all day, every day, they’re intimately familiar with all of the ins-and-outs of PKI that your team is unlikely to know or think about. They’re also very familiar with many of the issues you might face when setting up your PKI — and they have processes, procedures and policies in place to help mitigate them. 
+
+But what does this look like in terms of PKI architecture? We’re glad you asked. Let’s take the basic private PKI architecture graphic we shared earlier and update it to reflect changes relating to managed PKI:
+
 
 
