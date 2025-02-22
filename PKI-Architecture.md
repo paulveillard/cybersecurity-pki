@@ -252,6 +252,10 @@ For a closer look at the virtual private cloud (VPC) that is highlighted with th
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/microsoft-pki-aws-architecture-diagram-1024x546.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+A screenshot of AWS’s Microsoft PKI diagram. Image source for this PKI architecture diagram: [Amazon Web Services](https://aws.amazon.com/blogs/security/how-to-implement-a-hybrid-pki-solution-on-aws/).
+
+It’s important to note that the above PKI architectural graphic is really part of a quick start guide that doesn’t include recommended components such as an HSM. A true private PKI is more complicated, but this should at least help provide a basic idea of the architecture.
+
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 
