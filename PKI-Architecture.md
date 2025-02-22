@@ -286,3 +286,13 @@ As your organization’s PKI administrator, as you can see, many of the typical 
 
 However, you still have full control over the things that matter to your organization, such as certificate profiles and validation requirements.
 
+#### No Matter What Type of PKI Architecture You Have, You Need to Manage Your Certificates and Keys Carefully…
+
+Now, there’s a really important sidenote we have to at least mention here: the effectiveness of your PKI depends on how well you manage your certificate and key lifecycle. The lifecycle encompasses everything from creating and managing certificates (and their corresponding keys) to those certificates’ reissuances or (infrequent) revocations.
+
+This responsibility is a deciding factor in your organization’s security and compliance capabilities. As such, staying on top of your PKI’s certificate and key lifecycles is crucial in many ways. If even just one certificate expires on a public-facing system, or if a single private key gets compromised, you’ll be in for a world of hurt — you just might not know it right away…
+
+Let’s consider what happened to Equifax back in 2017. Unbeknownst to Equifax’s IT security team, one of their digital certificates expired and they didn’t realize it until many months later. This led to a data breach that went undetected for two-and-a-half months and, ultimately, resulted in massive fines and settlement payments that the company is expected to pay.
+
+Thankfully, there are some steps you can take to avoid many of these PKI management-related issues.
+
