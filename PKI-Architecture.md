@@ -232,6 +232,14 @@ So, what does a private PKI architecture look like? Here’s a basic overview of
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/private-pki-architecture.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+#### You Can Set Up a Private CA Using Microsoft CA and AWS ####
+
+Running your own private CA checks many of the boxes that companies care about when it comes to IT and security and user management, and it gives you the greatest control of your PKI. You could use a resource like Microsoft CA, or what’s technically known as Active Directory Certificate Services (ADCS), to set up and manage your private PKI.
+
+You can host your PKI on-prem or use a cloud-hosting provider such as Amazon Web Services (AWS) to host your Microsoft CA deployment, deploying your root and subordinate private CAs on Windows servers and using AWS Cloud HSM to sign your certs and store your private keys. This means you don’t have to go to the trouble and expense of setting up your own HSMs on-prem.
+
+Let’s take a quick peek at how it looks when you set up your private PKI via AWS:
+
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 
