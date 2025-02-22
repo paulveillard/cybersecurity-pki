@@ -215,7 +215,10 @@ But what does a public CA’s PKI architecture actually look like? The CAs don�
   <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/public-certificate-authority.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
+An illustration of public key infrastructure and where you as a PKI administrator and your public CA of choice fit into the process. Everything that is highlighted in the blue dotted lines occurs behind the scenes so you don’t see it happening.
+Just keep in mind that within that “Public CA’s Secure Facility” bubble, that the PKI architecture itself is typically a two-tier CA model, although some certificate authorities opt for three-tier — the latter is just less common.
 
+While publicly trusted certificates are important and serve many uses, they can’t meet all of your organization’s security needs. After all, you have private network devices and apps you also need to secure, right? This is why many enterprises and organizations opt to create something known as a private PKI or a private CA.
 
 ### `5.2 - PKI Architecture #2: Private CA (Internal CA)`
 
