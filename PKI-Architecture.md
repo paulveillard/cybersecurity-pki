@@ -248,6 +248,10 @@ An overview of a hybrid PKI solution via AWS. Image source for this PKI architec
 
 For a closer look at the virtual private cloud (VPC) that is highlighted with the green box in the lower-right quadrant of the image and how that would look if you decided to go the cloud or hybrid PKI route, check out the following graphic:
 
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/microsoft-pki-aws-architecture-diagram-1024x546.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 
