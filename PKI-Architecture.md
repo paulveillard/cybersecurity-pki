@@ -296,3 +296,11 @@ Let’s consider what happened to Equifax back in 2017. Unbeknownst to Equifax�
 
 Thankfully, there are some steps you can take to avoid many of these PKI management-related issues.
 
+#### 5.3.1 Use an HSM to Securely Store Your CA Private Keys
+
+These are the secure storage devices that help your organization keep your private keys safe. You can use an offline hardware security module (HSM) to store your root CA keys and an online HSM to store your intermediate CA keys for private PKI. But if you don’t want to go through the hassle of buying and setting up HSMs to use within your environment, a better option might be to use a managed PKI platform that’s built using HSMs.
+
+#### 5.3.2 Use a PKI Management Tool to Manage Your Certificates and Keys
+
+If you only have a handful of certificates and keys to track and manage, you can likely get away with using a spreadsheet to manage your PKI. But considering that another report from Keyfactor and the Ponemon Institute shows that organizations have an average of 88,750 certificates and keys in use on their networks, it’s impossible for full-time PKI admins to keep track of them all using manual means. This is why companies often use certificate management platforms to help them stay on top of their certificates, so nothing falls through the cracks.
+
