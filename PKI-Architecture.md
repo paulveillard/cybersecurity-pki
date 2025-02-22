@@ -276,5 +276,9 @@ Because this is what they eat, sleep, and breathe PKI all day, every day, they�
 
 But what does this look like in terms of PKI architecture? We’re glad you asked. Let’s take the basic private PKI architecture graphic we shared earlier and update it to reflect changes relating to managed PKI:
 
+<p align="center">
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/microsoft-pki-aws-architecture-diagram-1024x546.png?raw=true" alt="Sublime's custom image"/>
+</p>
+
 
 
