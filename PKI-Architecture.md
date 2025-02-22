@@ -229,7 +229,7 @@ Want to issue private user authentication certificates that will be trusted with
 So, what does a private PKI architecture look like? Here’s a basic overview of what all of that entails:
 
 <p align="center">
-  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/public-certificate-authority.png?raw=true" alt="Sublime's custom image"/>
+  <img src="https://github.com/paulveillard/cybersecurity-pki/blob/main/img/private-pki-architecture.png?raw=true" alt="Sublime's custom image"/>
 </p>
 
 
