@@ -298,7 +298,6 @@ Thankfully, there are some steps you can take to avoid many of these PKI managem
 
 #### 5.3.1 Use an HSM to Securely Store Your CA Private Keys
 
-https://www.youtube.com/watch?v=szagwwSLbXo
 
 These are the secure storage devices that help your organization keep your private keys safe. You can use an offline hardware security module (HSM) to store your root CA keys and an online HSM to store your intermediate CA keys for private PKI. But if you don’t want to go through the hassle of buying and setting up HSMs to use within your environment, a better option might be to use a managed PKI platform that’s built using HSMs.
 
