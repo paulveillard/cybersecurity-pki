@@ -256,6 +256,16 @@ A screenshot of AWS’s Microsoft PKI diagram. Image source for this PKI archite
 
 It’s important to note that the above PKI architectural graphic is really part of a quick start guide that doesn’t include recommended components such as an HSM. A true private PKI is more complicated, but this should at least help provide a basic idea of the architecture.
 
+It’s important to note that the above PKI architectural graphic is really part of a quick start guide that doesn’t include recommended components such as an HSM. A true private PKI is more complicated, but this should at least help provide a basic idea of the architecture.
+
+#### The Challenges of Setting Up Your Own Private PKI
+
+But there is one huge caveat about running a private PKI: you have to have the budget, infrastructure, time, money, and skilled people to dedicate to it. As you can imagine, setting up and managing a private PKI costs way more than an infomercial’s magic price of $19.99. Properly managing your PKI takes a lot of time, labor, and resources for organizations of all sizes.
+
+- Understaffing is a huge issue — data from Keyfactor and the Ponemon Institute’s State of Machine Identity Management Report 2021 shows that only 45% of companies say they have staff dedicated to managing their PKI.
+- Many in-house teams don’t know how to securely manage a certificate authority because they don’t necessarily handle those responsibilities in their day-to-day jobs.
+For these reasons (among others), many organizations that want to have their own PKIs wind up hiring managed PKI providers to handle setting one up and managing it for them.
+
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
 
