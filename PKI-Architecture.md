@@ -268,7 +268,7 @@ For these reasons (among others), many organizations that want to have their own
 
 
 ### `5.3 - PKI Architecture #3: Managed PKI (mPKI or PKI-as-a-Service)`
-
+Remember the 2009 phrase “There’s an App for That”? Well, the same can be said for the security services that you can outsource to experienced third-party providers, including the day-to-day management of your organization’s public key infrastructure. This is where a managed PKI service provider can make your work life a whole lot easier.
 
 
 
